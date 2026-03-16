@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
     <title>My First GitHub Page</title>
+    <!-- Bootstrap CSS --> 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">  
 
 </head> 
@@ -17,28 +20,97 @@
 
     <header> 
 
-        <h1>Welcome to FOUR Seasons Travel Agency</h1> 
-        <nav> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
 
-            <a href="index.html">Home</a> | 
+        <div class="container"> 
 
-            <a href="about.html">About</a> | 
+            <a class="navbar-brand" href="index.html">Four Seasons Travel Agency</a> 
 
-            <a href="contact.html">Contact</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
 
-        </nav> 
+                <span class="navbar-toggler-icon"></span> 
+
+            </button> 
+
+            <div class="collapse navbar-collapse" id="navbarNav"> 
+
+                <ul class="navbar-nav"> 
+
+                    <li class="nav-item"> 
+
+                        <a class="nav-link" href="index.html">Home</a> 
+
+                    </li> 
+
+                    <li class="nav-item"> 
+
+                        <a class="nav-link" href="about.html">About</a> 
+
+                    </li> 
+
+                    <li class="nav-item"> 
+
+                        <a class="nav-link" href="contact.html">Contact</a> 
+
+                    </li> 
+
+                </ul> 
+
+            </div> 
+
+        </div> 
+
+    </nav> 
 
     </header> 
 
  
 
-    <main> 
+    <main class="container my-5"> 
 
-        <p>At FOUR Seasons Travel Agency, we specialize in creating unforgettable journeys across the SADC region, from the vibrant cities of Botswana and South Africa to the breathtaking landscapes of Namibia, Zimbabwe, and beyond. Whether you’re seeking adventure, cultural immersion, or a relaxing getaway, our dedicated team is here to guide you every step of the way, ensuring your travel experience is seamless, enriching, and truly memorable.</p>
-        <p>We do hope our travel agency brings out the best of your travel of this breath taking region.</p> 
+    <div class="row"> 
 
-        <img src="https://www.researchgate.net/figure/Map-of-the-Southern-African-Development-Community-SADC-region-5_fig1_331715314" alt="A picture of the SADC region "> 
+        <div class="col-md-8"> 
 
+            <h2>Welcome to Four Seasons Travel Agency</h2> 
+
+            <p>At FOUR Seasons Travel Agency, we specialize in creating unforgettable journeys across the SADC region, from the vibrant cities of Botswana and South Africa to the breathtaking landscapes of Namibia, Zimbabwe, and beyond. Whether you’re seeking adventure, cultural immersion, or a relaxing getaway, our dedicated team is here to guide you every step of the way, ensuring your travel experience is seamless, enriching, and truly memorable.</p> 
+
+            <p>We do hope our travel agency brings out the best of your travel of this breath taking region. About Four Seasons Travel Agency</p> 
+            <p>Below are some of the popular destinations of our valued customers.</p>
+
+            <img src="https://www.researchgate.net/figure/Location-of-the-Tsumkwe-village-and-the-capital-Windhoek-in-Namibia-and-Sekhutlane_fig1_256502676" alt="Flight from Gaborone to Windhoek" class="img-fluid rounded"> 
+            <img src="https://flightfinder.co.za/wp-content/uploads/2019/02/Cheap-Flights-from-Johannesburg-to-Harare.png" alt="Flight for Johannesburg to Harare" class="img-fluid rounded">
+
+            
+        </div> 
+
+        <div class="col-md-4"> 
+
+            <div class="card"> 
+
+                <div class="card-body"> 
+
+                    <h5 class="card-title">Flight Price Range</h5> 
+
+                    <p class="card-text">Johannesburg to gaborone 
+                        P2499</p>
+                    <p>Gaborone to Windhoek
+                        P2580
+                    </p>
+                    <p>Gaborone to Johannesburg
+                        P3899
+                    </p>
+                </div> 
+
+            </div> 
+
+        </div> 
+
+    </div> 
+
+
+        
          
 
         
@@ -51,9 +123,12 @@
         <p>&copy; 2026 Mejako Matshediso</p> 
 
     </footer> 
+    <!-- Bootstrap JS and dependencies --> 
 
- 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
+   
 </body> 
 
 </html> 

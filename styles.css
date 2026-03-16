@@ -2,7 +2,7 @@ body {
 
     font-family: Arial, sans-serif; 
 
-    color: #070202; 
+    color: #f4e9e9; 
 
     background-color: #08d1cee3; 
 
@@ -121,8 +121,16 @@ img {
 } 
 main a[href^="mailto:"] { 
 
-    color: #080403; 
+    color: #f6f1efe2; 
 
     font-weight: bold; 
 
 } 
+body{
+    background-image:url('https://www.travelandleisure.com/thmb/ybgH3tLcB_dxBDf4OTJr3BFddWE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/TAL-sunset-afrian-landscape-ALISTBJORN1125-ba67aaeeb47e4f62a7c724b7a090d5ea.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    
+}
