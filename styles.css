@@ -30,9 +30,7 @@ header h1 {
 
 } 
 
-p,h1 {
-    color: red;
-}
+
 
 
 nav a { 
@@ -136,4 +134,273 @@ body{
     background-repeat:no-repeat;
     background-attachment:fixed;
     
+}
+
+/* Page-specific styles for about.html (moved from inline <style>) */
+.topbar{background:#e6e6e6;padding:14px 0;border-bottom:1px solid #d0d0d0}
+.topbar .inner{width:92%;max-width:1100px;margin:0 auto;display:flex;align-items:center}
+.topbar .logo{background:#7a7a7a;color:#fff;padding:10px 14px;border-radius:3px;margin-right:18px}
+.topbar .nav{display:flex;gap:12px;margin-left:auto}
+.topbar .nav a{background:#8f8f8f;color:#fff;padding:10px 14px;border-radius:3px;text-decoration:none}
+
+.about-hero{width:92%;max-width:1100px;margin:28px auto 18px;text-align:left}
+.lead-lines{display:flex;flex-direction:column;gap:12px;align-items:flex-start;margin-bottom:28px}
+.lead-lines .line{height:14px;background:#bfbfbf;width:60%;border-radius:3px}
+.lead-lines .line.short{width:40%}
+
+.features{width:92%;max-width:1100px;margin:40px auto;display:flex;gap:28px}
+.feature{flex:1}
+.feature .image{background:#666;height:160px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.feature img{width:100%;height:100%;object-fit:cover}
+.feature .title{height:12px;background:#bfbfbf;margin:18px 0;border-radius:3px;width:50%}
+.feature .sub{height:12px;background:#d2d2d2;border-radius:3px;width:70%}
+
+.full-footer{background:#cfcfcf;padding:24px;margin:40px 4%}
+
+@media(max-width:900px){.features{flex-direction:column}.topbar .nav{margin-left:12px}}
+
+/* Flights page specific styles */
+.flights-grid-top {
+    width: 92%;
+    max-width: 1100px;
+    margin: 28px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.flights-grid-top .flight-img {
+    background: #555;
+    height: 180px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.flights-grid-top .flight-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.flights-grid-bottom {
+    width: 92%;
+    max-width: 1100px;
+    margin: 24px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+.search-box {
+    background: #bfbfbf;
+    border: 2px dashed #888;
+    border-radius: 4px;
+    padding: 18px;
+}
+.search-box h5 {
+    margin-top: 0;
+    color: #222;
+}
+.search-box form {
+    margin: 0;
+}
+.search-box .form-label, .search-box .form-control {
+    font-size: 0.9em;
+}
+.flight-img-bottom {
+    background: #555;
+    height: 180px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.flight-img-bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media(max-width: 900px) {
+    .flights-grid-top {
+        grid-template-columns: 1fr;
+    }
+    .flights-grid-bottom {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Lodges page specific styles */
+.lodges-container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 28px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.lodges-left {
+    padding: 0;
+}
+
+.lodges-left h1 {
+    font-size: 28px;
+    margin: 0 0 24px;
+    color: #333;
+}
+
+.lodge-item {
+    margin-bottom: 32px;
+}
+
+.lodge-item h2 {
+    font-size: 18px;
+    color: #444;
+    margin: 0 0 8px;
+}
+
+.lodge-item p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+
+.lodge-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #00c3a6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.lodge-link:hover {
+    background: #00a88a;
+}
+
+.lodges-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.lodge-image {
+    margin: 0;
+    background: #666;
+    height: 180px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lodge-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media(max-width: 900px) {
+    .lodges-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .lodges-right {
+        flex-direction: row;
+    }
+    
+    .lodge-image {
+        flex: 1;
+    }
+}
+
+/* Photo Galleries page specific styles */
+.gallery-container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 28px auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.gallery-item {
+    margin: 0;
+    background: #666;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item-1 {
+    position: relative;
+}
+
+.overlay-box {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 60px;
+    height: 30px;
+    border: 2px solid #00c3a6;
+    border-radius: 2px;
+    background: transparent;
+    z-index: 10;
+}
+
+.gallery-content {
+    background: #f5f5f5;
+    padding: 28px;
+    border-radius: 4px;
+}
+
+.gallery-content h1 {
+    font-size: 28px;
+    margin: 0 0 12px;
+    color: #333;
+}
+
+.gallery-content h2 {
+    font-size: 18px;
+    color: #444;
+    margin: 0 0 16px;
+}
+
+.gallery-content p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 12px;
+}
+
+.gallery-content p:last-child {
+    margin-bottom: 0;
+}
+
+@media(max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
 }
