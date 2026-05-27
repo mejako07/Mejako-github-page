@@ -1,163 +1,178 @@
-body { 
+body {
+    font-family: Arial, sans-serif;
+    color: #f4e9e9;
+    background-color: #08d1cee3;
+    background-image: url('https://www.travelandleisure.com/thmb/ybgH3tLcB_dxBDf4OTJr3BFddWE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/TAL-sunset-afrian-landscape-ALISTBJORN1125-ba67aaeeb47e4f62a7c724b7a090d5ea.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    background-color: #f0f0ebd7;
+    color: rgba(8, 10, 4, 0.93);
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
 
-    font-family: Arial, sans-serif; 
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
 
-    color: #f4e9e9; 
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-    background-color: #08d1cee3; 
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+footer {
+    background-color: #092789;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+p {
+    font-size: 1.1em;
+}
 
-    margin: 0; 
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
 
-    padding: 0; 
-
-    line-height: 1.6; 
-
-} 
-header { 
-
-    background-color: #f0f0ebd7; 
-
-    color: rgba(8, 10, 4, 0.93); 
-
-    padding: 20px; 
-
-    text-align: center; 
-
-} 
-header h1 { 
-
-    margin: 0; 
-
-} 
-
-
-
-
-nav a { 
-
-    color: white; 
-
-    text-decoration: none; 
-
-    margin: 0 10px; 
-
-} 
-
- 
-
-nav a:hover { 
-
-    text-decoration: underline; 
-
-} 
-main { 
-
-    padding: 20px; 
-
-    max-width: 800px; 
-
-    margin: 0 auto; 
-
-} 
-
- 
-
-main img { 
-
-    max-width: 100%; 
-
-    height: auto; 
-
-    display: block; 
-
-    margin: 20px 0; 
-
-} 
-footer { 
-
-    background-color: #092789; 
-
-    color: white; 
-
-    text-align: center; 
-
-    padding: 10px; 
-
-    position: fixed; 
-
-    bottom: 0; 
-
-    width: 100%; 
-
-} 
-p { 
-
-    font-size: 1.1em; 
-
-} 
-
- 
-
-a { 
-
-    color: #4CAF50; 
-
-    text-decoration: none; 
-
-} 
-
- 
-
-a:hover { 
-
-    text-decoration: underline; 
-
-} 
-img { 
-
-    border: 5px solid #139ad8; 
-
-    border-radius: 10px; 
-
-} 
-main a[href^="mailto:"] { 
-
-    color: #f6f1efe2; 
-
-    font-weight: bold; 
-
-} 
-body{
-    background-image:url('https://www.travelandleisure.com/thmb/ybgH3tLcB_dxBDf4OTJr3BFddWE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/TAL-sunset-afrian-landscape-ALISTBJORN1125-ba67aaeeb47e4f62a7c724b7a090d5ea.jpg');
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    
+a:hover {
+    text-decoration: underline;
+}
+img {
+    border: 5px solid #b4babc;
+    border-radius: 10px;
+}
+main a[href^="mailto:"] {
+    color: #f6f1efe2;
+    font-weight: bold;
 }
 
 /* Page-specific styles for about.html (moved from inline <style>) */
-.topbar{background:#e6e6e6;padding:14px 0;border-bottom:1px solid #d0d0d0}
-.topbar .inner{width:92%;max-width:1100px;margin:0 auto;display:flex;align-items:center}
-.topbar .logo{background:#7a7a7a;color:#fff;padding:10px 14px;border-radius:3px;margin-right:18px}
-.topbar .nav{display:flex;gap:12px;margin-left:auto}
-.topbar .nav a{background:#8f8f8f;color:#fff;padding:10px 14px;border-radius:3px;text-decoration:none}
+.topbar {
+    background: #e6e6e6;
+    padding: 14px 0;
+    border-bottom: 1px solid #d0d0d0;
+}
+.topbar-inner {
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.topbar .nav-items {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+}
+.topbar .nav-items .nav-link {
+    background: #8f8f8f;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 3px;
+    text-decoration: none;
+}
 
-.about-hero{width:92%;max-width:1100px;margin:28px auto 18px;text-align:left}
-.lead-lines{display:flex;flex-direction:column;gap:12px;align-items:flex-start;margin-bottom:28px}
-.lead-lines .line{height:14px;background:#bfbfbf;width:60%;border-radius:3px}
-.lead-lines .line.short{width:40%}
+.about-hero {
+    width: 92%;
+    max-width: 1100px;
+    margin: 28px auto 18px;
+    text-align: left;
+}
+.lead-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 28px;
+}
+.lead-lines .line {
+    height: 14px;
+    background: #bfbfbf;
+    width: 60%;
+    border-radius: 3px;
+}
+.lead-lines .line.short {
+    width: 40%;
+}
 
-.features{width:92%;max-width:1100px;margin:40px auto;display:flex;gap:28px}
-.feature{flex:1}
-.feature .image{background:#666;height:160px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center}
-.feature img{width:100%;height:100%;object-fit:cover}
-.feature .title{height:12px;background:#bfbfbf;margin:18px 0;border-radius:3px;width:50%}
-.feature .sub{height:12px;background:#d2d2d2;border-radius:3px;width:70%}
+.features {
+    width: 92%;
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    gap: 28px;
+}
+.feature {
+    flex: 1;
+}
+.feature .image {
+    background: #666;
+    height: 160px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feature .title {
+    height: 12px;
+    background: #bfbfbf;
+    margin: 18px 0;
+    border-radius: 3px;
+    width: 50%;
+}
+.feature .sub {
+    height: 12px;
+    background: #d2d2d2;
+    border-radius: 3px;
+    width: 70%;
+}
 
-.full-footer{background:#cfcfcf;padding:24px;margin:40px 4%}
+.full-footer {
+    background: #cfcfcf;
+    padding: 24px;
+    margin: 40px 4%;
+}
 
-@media(max-width:900px){.features{flex-direction:column}.topbar .nav{margin-left:12px}}
+@media(max-width:900px) {
+    .features {
+        flex-direction: column;
+    }
+    .topbar .nav-items {
+        margin-left: 12px;
+    }
+}
 
 /* Flights page specific styles */
 .flights-grid-top {
@@ -404,3 +419,97 @@ body{
         grid-template-columns: 1fr;
     }
 }
+
+/* Contact page specific styles */
+.contact-page {
+    width: 92%;
+    max-width: 1100px;
+    margin: 32px auto 40px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.contact-form-panel {
+    background: rgba(255,255,255,0.92);
+    border: 2px dashed #b7b7b7;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.contact-form-panel h1 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: #333;
+}
+
+.contact-form {
+    display: grid;
+    gap: 18px;
+}
+
+.contact-form label {
+    display: block;
+    color: #444;
+    font-size: 0.95em;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    font-size: 0.95em;
+    color: #222;
+    background: #fff;
+}
+
+.contact-form textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: fit-content;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background: #00c3a6;
+    color: white;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.contact-form button:hover {
+    background: #00937f;
+}
+
+.contact-info-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    padding: 10px 0;
+}
+
+.contact-info-panel p {
+    margin: 0;
+    color: #444;
+    line-height: 1.7;
+    font-size: 0.98em;
+}
+
+@media(max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
